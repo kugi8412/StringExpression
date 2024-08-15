@@ -5,7 +5,8 @@ Classes that allow you to operate on text expressions.
 The string expressions we are considering contain:
 
 Constants (enclosed in inverted commas),
-    1) Variables (denoted by single lower case Latin letters),
+    1) Variables (denoted by single lower case Latin letters)
+    
     2) Unary operators:
         Converts to upper case (^), non-letter characters remain unchanged, is intended to work for letters of the English alphabet, for others it may or may not.
         E.g. ^"java and c++" results in "JAVA AND C++".
@@ -13,6 +14,7 @@ Constants (enclosed in inverted commas),
         E.g. _"PanDas" results in "pandas".
         Counting the length of a letter (#), the result is to be a letter that is that length.
         E.g. #"Java" gives the result '4'.
+        
     3) Binary operators:
         Concatenating subtitles (&). The result has the first argument first, then the second argument.
         E.g. "J" & "ava" results in "Java".
